@@ -1,0 +1,38 @@
+#navbar {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+}
+
+.nav-link,
+nav header {
+  font-size: 20px;
+  text-align: center;
+}
+
+#main-doc {
+  margin: 0 0 0 calc(10% + 10px);
+}
+
+@media (max-width: 1007px) {
+  #navbar {
+    width: 100%;
+    height: 10%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+  }
+
+  #main-doc {
+    margin: calc(10% + 10px) 0 0 0;
+  }
+
+  .nav-link {
+    font-size: 15px;
+  }
+}
